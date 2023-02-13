@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
+import { HomeDetalhesComponent } from './home-detalhes/home-detalhes.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HomeDetalhesComponent
   ],
   imports: [
     CommonModule
