@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppService } from './app.service';
 import { HomeModule } from './home/home.module';
 import { IntroComponent } from './intro/intro.component';
 
@@ -17,7 +18,9 @@ import { IntroComponent } from './intro/intro.component';
     AppRoutingModule,
     HomeModule
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
